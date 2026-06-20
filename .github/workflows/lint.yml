@@ -15,3 +15,6 @@ jobs:
     # this steps will automatically clone the code of the current branch
       - name: checkout the code or clone the code
         uses: actions/checkout@v7
+  # this step will install the liniting tool 
+      - name: Install Linter
+        run: pip install ruff
