@@ -1,0 +1,17 @@
+# lint - means checks, syntax, code, spellings,code indentations etc
+# what is the goal of your workflow
+# GOAL - whenever soeone changes the python code the lint will check if the syntax, spelling, code indentation or format  (Liniting) correct or not.
+
+name: Auto Linter
+
+on:
+  push:
+    paths: "*.py"
+    
+jobs:
+  code:
+    runs-on: ubuntu-latest 
+    steps:
+    # this steps will automatically clone the code of the current branch
+      - name: checkout the code or clone the code
+        uses: actions/checkout@v7
