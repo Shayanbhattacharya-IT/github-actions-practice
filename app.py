@@ -6,9 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return render_template('index.html')
-
-def run_
-    do
+# this is my 3rd github actions
 
 @app.route('/health')
 def health():
